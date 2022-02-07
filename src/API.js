@@ -2,7 +2,7 @@ import { BASE_URL } from "./config";
 
 const apiSettings = {
   fetchAll: async () => {
-    const endpoint = `${BASE_URL}api/all.json`;
+    const endpoint = `${BASE_URL}/all.json`;
     return await (await fetch(endpoint)).json();
   },
   fetchOne: async id => {
