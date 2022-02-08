@@ -21,5 +21,16 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
 
+    p {
+      font-size: var(--fontMed);
+    }
+
+    h3 {
+      font-size: var(--fontBig);
+    }
+
+    a {
+      text-decoration: none;
+    }
   }
 `;

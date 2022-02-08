@@ -1,11 +1,14 @@
 import React from 'react';
 
-import { Wrapper, Content} from './styles'; 
+import { Wrapper, Content, HeaderContainer} from './styles'; 
 
-const Grid = ({ header, children}) => {
+const Grid = ({ header, info, children}) => {
   return (
     <Wrapper>
-      <h1>{header}</h1>
+      <HeaderContainer>
+        <h1>{header}</h1>
+        <p>{info}</p>
+      </HeaderContainer>
       <Content>{children}</Content>
     </Wrapper>
   );

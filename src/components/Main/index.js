@@ -3,10 +3,12 @@ import React, { useState } from 'react';
 import Grid from "../Grid";
 import API from '../../API';
 
-var loaded = false;
+import Thumb from '../Thumb';
+
 
 const Main = () => {
   
+  const [loaded, setLoaded] = useState(false);
   const [state, setState] = useState([]);
   
   const fetchCharacters = async () => {
@@ -15,18 +17,21 @@ const Main = () => {
 
   if(!loaded){
     fetchCharacters();
-    loaded = true;
+    setLoaded(!loaded);
   }
   
   console.log(state);
 
   return(
-    <Grid header="Characters" >
+    <Grid header="Characters" info="(Click card for more info)">
       {state.map(character => (
-        <>
-        <p>{character.name}</p>
-        <p>{character.height}</p>
-        </>
+       <Thumb key={character.id} 
+        image={character.image} 
+        name={character.name} 
+        url={character.wiki}
+        species={character.species}
+        height={character.height}
+       />
       ))}
     </Grid>
   );
