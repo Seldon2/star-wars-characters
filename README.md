@@ -2,13 +2,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## How to run the App in your browser
 
-# 1:
+### First step:
 
 In the project directory, you have to run:
 
 ### `npm install`
 
-# 2: 
+### Second step: 
 
 In the project directory, you can run then:
 
