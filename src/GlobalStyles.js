@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     --fontBig: 1.5rem;
     --fontMed: 1.2rem;
     --fontSmall: 1rem;
+    --fontTiny: 0.8rem;
   }
 
   * {
@@ -23,13 +24,21 @@ export const GlobalStyle = createGlobalStyle`
 
     p {
       font-size: var(--fontMed);
+      color: var(--white);
+    }
+
+    h1 {
+      font-size: var(--fontSuperBig);
+      color: var(--white);
     }
 
     h3 {
       font-size: var(--fontBig);
+      color: var(--white);
     }
 
     a {
+      color: var(--white);
       text-decoration: none;
     }
   }

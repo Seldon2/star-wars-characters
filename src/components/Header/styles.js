@@ -12,27 +12,39 @@ export const Content = styled.div`
   max-width: var(--maxWidth);
   padding: 10px 0;
   margin: 0 auto;
-  color: var(--white);
 `;
 
 export const Navigaton = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-left: 780px;
   width: 50%;
 `;
 
+
 export const Item = styled.a`
-  color: var(--yellow);
+  color: var(--white);
   font-size: var(--fontBig);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+
+  @media (max-width: 768px) {
+      font-size: var(--fontMed);
+  }
+
+  :hover {
+    color: var(--yellow);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
 `;
 
 export const LogoImg = styled.img`
   width: 200px;
   height: 100px;
 
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 768px){
     width: 150px;
   }
 `;

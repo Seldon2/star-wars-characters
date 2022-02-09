@@ -12,8 +12,9 @@ const Header = () => {
         <Navigaton>
           <Item>Test</Item>
           <Item>Test</Item>
-          <Item>Test</Item>
+          <Item >Test</Item>
         </Navigaton>
+        <Item title="my Github page" href="https://github.com/Seldon2" target="_blank"><i class="fab fa-github"></i></Item>
       </Content>
     </Wrapper>
   );

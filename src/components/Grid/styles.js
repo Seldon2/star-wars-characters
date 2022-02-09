@@ -14,9 +14,15 @@ export const HeaderContainer = styled.div`
 
   h1 {
     margin-right: 10px;
+    color: var(--black)!important;
+
+    @media (max-width: 768px) {
+      font-size: var(--fontBig);
+    }
   }
 
   p{
+    color: var(--black)!important;
     @media (max-width: 768px) {
       font-size: var(--fontSmall);
     }
