@@ -2,12 +2,11 @@ import React from 'react';
 
 import { Wrapper, Content, HeaderContainer} from './styles'; 
 
-const Grid = ({ header, info, children}) => {
+const Grid = ({ header, children}) => {
   return (
     <Wrapper>
       <HeaderContainer>
-        <h1>{header}</h1>
-        <p>{info}</p>
+        <span><b>{header}</b> (Click card for more info)</span>
       </HeaderContainer>
       <Content>{children}</Content>
     </Wrapper>

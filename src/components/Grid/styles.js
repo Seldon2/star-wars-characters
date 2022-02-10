@@ -12,19 +12,21 @@ export const HeaderContainer = styled.div`
   align-items: center;
   margin: 20px 0;
 
-  h1 {
-    margin-right: 10px;
+  span {
     color: var(--black)!important;
-
-    @media (max-width: 768px) {
-      font-size: var(--fontBig);
-    }
-  }
-
-  p{
-    color: var(--black)!important;
+    font-size: var(--fontMed)!important;
     @media (max-width: 768px) {
       font-size: var(--fontSmall);
+    }
+
+    b{
+      margin-right: 10px;
+      color: var(--black)!important;
+      font-size: var(--fontSuperBig);
+  
+      @media (max-width: 768px) {
+        font-size: var(--fontBig);
+      }
     }
   }
 `

@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
   :root {
     --maxWidth: 1280px;
     --black: #000;
@@ -15,12 +17,13 @@ export const GlobalStyle = createGlobalStyle`
 
   * {
     box-sizing: border-box;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Roboto Mono', monospace;
   }
 
   body {
     margin: 0;
     padding: 0;
+    background: linear-gradient(to bottom, #e0e0e0, #919191);
 
     p {
       font-size: var(--fontMed);

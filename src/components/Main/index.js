@@ -23,7 +23,7 @@ const Main = () => {
   console.log(state);
 
   return(
-    <Grid header="Characters" info="(Click card for more info)">
+    <Grid header="CHARACTERS">
       {state.slice(0, 15).map(character => (
        <Thumb key={character.id} 
         image={character.image} 
