@@ -10,9 +10,9 @@ const Header = () => {
       <Content>
         <LogoImg src={Logo} alt="star-wars logo"/>
         <Navigaton>
-          <Item>Test</Item>
-          <Item>Test</Item>
-          <Item >Test</Item>
+          <Item>Home</Item>
+          <Item>About</Item>
+          <Item>Contact</Item>
         </Navigaton>
         <Item title="my Github page" href="https://github.com/Seldon2" target="_blank"><i class="fab fa-github"></i></Item>
       </Content>

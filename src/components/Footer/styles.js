@@ -13,7 +13,6 @@ export const Content = styled.div`
   max-width: var(--maxWidth);
   padding: 10px 0;
   margin: 0 auto;
-
 `;
 
 export const Item = styled.a`
@@ -33,7 +32,7 @@ export const Item = styled.a`
   }
 
   @media screen and (max-width: 500px){
-   font-size: var(--fontSmall);
+    font-size: var(--fontSmall);
   }
 `;
 
@@ -63,8 +62,8 @@ export const ContactContainer = styled.div`
   h3 {
       text-decoration: underline;
       @media screen and (max-width: 768px){
-      font-size: var(--fontMed);
-      }
+        font-size: var(--fontMed);
+      } 
 
       @media screen and (max-width: 500px){
         font-size: var(--fontSmall);

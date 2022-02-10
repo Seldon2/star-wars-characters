@@ -10,9 +10,9 @@ const Footer = () => {
       <Content>
         <LogoImg src={Logo} alt="star-wars logo"/>
         <NavigationContainer>
-          <Item>Test</Item>
-          <Item>Test</Item>
-          <Item>Test</Item>
+          <Item>Home</Item>
+          <Item>About</Item>
+          <Item>Contact</Item>
         </NavigationContainer>
         <ContactContainer>
           <h3>Contact</h3>
