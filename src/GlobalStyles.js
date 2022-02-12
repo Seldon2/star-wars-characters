@@ -20,7 +20,8 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto Mono', monospace;
   }
 
-  body {
+  html,body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #e0e0e0, #919191);

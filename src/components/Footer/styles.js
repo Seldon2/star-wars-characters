@@ -32,7 +32,7 @@ export const Item = styled.a`
   }
 
   @media screen and (max-width: 500px){
-    font-size: var(--fontSmall);
+    font-size: var(--fontTiny);
   }
 `;
 
@@ -59,6 +59,7 @@ export const NavigationContainer = styled.div`
 export const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
+  
   h3 {
       text-decoration: underline;
       @media screen and (max-width: 768px){

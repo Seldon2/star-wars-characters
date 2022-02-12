@@ -6,6 +6,13 @@ export const SearchBar = styled.div`
   height: 100px;
   background: var(--black);
   padding: 0 20px;
+  margin-top: -30px;
+
+  @media screen and (max-width: 768px){
+    height: 85px;
+    margin-top: -40px;
+  }
+
 `;
 
 export const Content = styled.div`
@@ -18,11 +25,8 @@ export const Content = styled.div`
   border-radius: 40px;
   color: var(--black);
 
-  img {
-    position: absolute;
-    left: 15px;
-    top: 14px;
-    width: 30px;
+  @media screen and (max-width: 768px){
+    height: 40px;
   }
 
   input {
@@ -36,6 +40,11 @@ export const Content = styled.div`
     background: transparent;
     height: 40px;
     color: var(--black);
+
+    @media screen and (max-width: 768px){
+      font-size: var(--fontSmall);
+      height: 25px;
+    }
 
     :focus{
       outline: none;

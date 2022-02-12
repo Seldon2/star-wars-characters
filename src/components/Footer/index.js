@@ -5,6 +5,8 @@ import { Wrapper, Content, NavigationContainer, ContactContainer, Item, LogoImg}
 import Logo from "../../imgs/Star_Wars_Logo.svg";
 
 const Footer = () => {
+  var width = window.innerWidth;
+
   return (
     <Wrapper>
       <Content>
@@ -19,7 +21,7 @@ const Footer = () => {
           <p>Emilio Oberheller</p>
           <p>Salvatorstraße 41f</p>
           <p>+43 660 1066671</p>
-          <p>emilio.oberheller@hotmail.com</p>
+          {width > 565 ? <p>emilio.oberheller@hotmail.com</p> : null}
         </ContactContainer>
       </Content>
     </Wrapper>
